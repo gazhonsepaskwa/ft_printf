@@ -6,13 +6,13 @@
 /*   By: nalebrun <nalebrun@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:39:58 by nalebrun          #+#    #+#             */
-/*   Updated: 2024/10/21 17:07:32 by nalebrun         ###   ########.fr       */
+/*   Updated: 2024/10/21 17:53:06 by nalebrun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void int_part(int num, int fd)
+static void int_part(int num, int fd)
 {
     if (num < 0)
 	{
@@ -24,7 +24,7 @@ void int_part(int num, int fd)
     ft_putchar_fd(num % 10 + '0', 1);
 }
 
-void ft_putdec_fd(double num, int fd)
+void    ft_putdec_fd(double num, int fd)
 {
 	int integerPart;
 	double fractionalPart;
